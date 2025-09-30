@@ -48,8 +48,6 @@ tags:
         description: Marketplace operations
     -   name: webdav
         description: WebDAV operations
-    -   name: box
-        description: Box operations
     -   name: publishing
         description: Publishing operations
     -   name: security
@@ -4653,7 +4651,7 @@ paths:
         get:
             tags:
                 - plugin
-            summary: Reloads groovy classes for all plugins in a given site
+            summary: Reload groovy classes for all plugins in a given site
             operationId: reloadClasses
             parameters:
                 -   name: siteId
@@ -5329,7 +5327,7 @@ paths:
         get:
             tags:
                 - content
-            summary: Check the existent of a content path
+            summary: Check the existence of a content path
             description: 'Required permission "content_read"'
             operationId: contentExists
             parameters:
@@ -9353,15 +9351,15 @@ components:
                         type: string
                         description: >-
                             Authentication type to use to access remote repository
-    
+
                             Possible values:
-    
+
                               - none: no authentication
-    
+
                               - basic: username and password authentication
-    
+
                               - token: token authentication
-    
+
                               - key: key-based authentication
                     remoteUsername:
                         type: string
